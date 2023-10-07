@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poopins', sans-serif;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo
+{
+    font-size: 25px;
+    color: #00C5CF;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a
+{
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar a:hover, 
+.navbar a.active{
+    color: #0008B5;
+}
+.home
+{
+    height: 100vh;
+    background: linear-gradient(-90deg, #00C5CF 65%, #fff 35%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+.home-image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 500px;
+    background: #00C5CF;
+    border-radius: 50%;
+    border: 25px solid #fff;
+    outline: 25px solid #00C5CF;
+}
+.home-image img
+{
+    border-radius: 100%;
+    position: relative;
+    max-width: 450px;
+    max-height: 400px;
+}
+.home-content
+{
+    max-width: 600px;
+    color: #000;
+    text-align: right;
+}
+.home-content h1
+{
+    font-size: 55px;
+    line-height: 1.2;
+}
+.home-content h3
+{
+    font-size: 40px;
+    color: transparent;
+    -webkit-text-stroke: .5px #000;
+    background-image: linear-gradient(#0008B5, #0008B5);
+    background-repeat: no-repeat;
+        -webkit-background-clip: text;
+    background-position: -410px 0;
+    animation: animateText 6s linear infinite;
+}
+@keyframes animateText
+{
+    0%, 95%, 100% {
+        background-position: -410px 0;
+    }
+    65%, 85% {
+        background-position: 0 0;
+    }
+}
+.home-content p
+{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.home-sci
+{
+    margin: 25px 0 40px;
+}
+.home-sci a
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #112585;
+    text-decoration: none;
+    margin-left: 12px;
+}
+.home-sci a:hover
+{
+    background: #0008B5;
+    color: #fff;
+    border-color: #0008B5;
+    box-shadow: 0 0 10px #0008B5;
+}
+.btn
+{
+    padding: 12px 35px;
+    background: #0008B5;
+    border-radius: 40px;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #0008B5;
+    transition: .5s;
+}
+.btn:hover
+{
+    box-shadow: none;
+}
